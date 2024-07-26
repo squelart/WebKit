@@ -213,7 +213,10 @@ class WebCore::PaymentSessionError {
     bool phoneticName;
 };
 
-[Nested] enum class WebCore::ApplePaySessionPaymentRequest::Requester : bool;
+[Nested] enum class WebCore::ApplePaySessionPaymentRequest::Requester : bool {
+    ApplePayJS,
+    PaymentRequest
+};
 
 [CustomHeader] class WebCore::ApplePaySessionPaymentRequest {
     String countryCode();
